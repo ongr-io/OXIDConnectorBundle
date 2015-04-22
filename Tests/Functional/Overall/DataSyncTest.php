@@ -60,7 +60,6 @@ class DataSyncTest extends AbstractTestCase
         );
 
         // The part of "sync execute".
-
         $esManager = $this->getServiceContainer()->get('es.manager');
         $esManager->getConnection()->dropAndCreateIndex();
 
@@ -137,10 +136,9 @@ class DataSyncTest extends AbstractTestCase
                     'stock' => 2,
                     'vendor' => 'Vendor Title for PRODUCT TWO',
                     'manufacturer' => 'Naish',
-                    'categories' =>
-                            [
-                                0 => 'fada9485f003c731b7fad08b873214e0',
-                            ],
+                    'categories' => [
+                        0 => 'fada9485f003c731b7fad08b873214e0',
+                    ],
                 ],
             ],
             'TestBundle:CategoryDocument' => [
@@ -152,14 +150,12 @@ class DataSyncTest extends AbstractTestCase
                     'left' => 4,
                     'right' => 5,
                     'root_id' => '30e44ab83fdee7564.23264141',
-                    'attributes' =>
-                        [
-                            0 =>
-                                [
-                                    'title' => 'testAttribute',
-                                    'pos' => 9999,
-                                ],
+                    'attributes' => [
+                        0 => [
+                            'title' => 'testAttribute',
+                            'pos' => 9999,
                         ],
+                    ],
                 ],
             ],
             'TestBundle:ContentDocument' => [
