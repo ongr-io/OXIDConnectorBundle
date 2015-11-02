@@ -193,7 +193,7 @@ class ProductModifierTest extends \PHPUnit_Framework_TestCase
     /**
      * @param Article $parent
      *
-     * @return Article[] ;
+     * @return Article[]
      */
     private function getVariants($parent)
     {
